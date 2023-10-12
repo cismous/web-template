@@ -1,0 +1,33 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typecript",
+    "typescriptreact"
+  ],
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "javascript.suggestionActions.enabled": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.formatOnSave": true
+  },
+  "[postcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "emmet.syntaxProfiles": {
+    "postcss": "css"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
+}

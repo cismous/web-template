@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/*": [
+        "*"
+      ]
+    },
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "module": "esnext",
+    "target": "esnext",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "strict": false,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node"
+  },
+  "include": [
+    "node_modules/@skzm/*/src/types",
+    "src/**/*"
+  ]
+}
