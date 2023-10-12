@@ -60,7 +60,7 @@
   },
   "bun-create": {
     "preinstall": "echo 'Installing...'",
-    "postinstall": ["bun link @skzm/web-common", "echo 'Done!'"],
+    "postinstall": ["bun link @skzm/web-common", "echo 'Done!!'"],
     "start": "bun run echo 'Hello world!'"
   }
 }
