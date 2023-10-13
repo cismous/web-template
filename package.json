@@ -5,7 +5,7 @@
   "scripts": {
     "start": "TITLE=零售管理系统-数科造梦 HOSTNAME=store.local.mengjia.info PORT=3004 NODE_ENV=development webpack serve --stats-error-details --progress",
     "build": "rm -rf dist && TITLE=零售管理系统-数科造梦 NODE_ENV=production webpack",
-    "deploy": "npm version patch && npm run build && sh script/upload.sh"
+    "deploy": "npm version patch && npm run build && sh node_modules/@skzm/web-common/script/upload.sh"
   },
   "browserslist": {
     "production": [
@@ -60,7 +60,7 @@
   },
   "bun-create": {
     "preinstall": "echo 'Installing...'",
-    "postinstall": ["bun link @skzm/web-common", "echo 'Done!!'"],
+    "postinstall": ["bun link @skzm/web-common", "bun run node_modules/@skzm/web-common/script/cli.ts"],
     "start": "bun run echo 'Hello world!'"
   }
 }
